@@ -1,0 +1,30 @@
+.search-results-page {
+    padding: 20px;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.result-card {
+    display: flex;
+    background: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.result-image img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.result-info {
+    padding: 15px;
+}

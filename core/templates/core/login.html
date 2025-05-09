@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .background-pattern {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.05) 0px,
+        rgba(255,255,255,0.05) 2px,
+        transparent 2px,
+        transparent 8px
+      );
+      z-index: 0;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3rem 2.5rem;
+      width: 90%;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .login-container:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #2d3748;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background: #667eea;
+      border-radius: 2px;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    }
+
+    .input-group label {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #718096;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      background: white;
+      padding: 0 0.5rem;
+    }
+
+    .input-group input:focus ~ label,
+    .input-group input:not(:placeholder-shown) ~ label {
+      top: 0;
+      font-size: 0.875rem;
+      color: #667eea;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    .sign-up-link {
+      display: block;
+      margin-top: 1.5rem;
+      text-align: center;
+      color: #4a5568;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .sign-up-link span {
+      color: #667eea;
+      font-weight: 600;
+      margin-left: 0.25rem;
+    }
+
+    .sign-up-link:hover {
+      color: #2d3748;
+    }
+
+    #error-message {
+      color: #e53e3e;
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      text-align: center;
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 2rem 1.5rem;
+      }
+      
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-pattern"></div>
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form id="login-form">
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder=" " required>
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" class="login-btn">Continue</button>
+      <p id="error-message"></p>
+    </form>
+    <a href="{% url 'signup' %}" class="sign-up-link">New user?<span>Create account</span></a>
+  </div>
+
+  <!-- Firebase Modular SDK (Keep the same JavaScript code) -->
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+  // TODO: Replace with your Firebase project configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBsRy6ZnDV9uDbPDoHKd2XVtgaRxCGcqbQ",
+    authDomain: "medhealth-3c9ce.firebaseapp.com",
+    projectId: "medhealth-3c9ce",
+    storageBucket: "medhealth-3c9ce.firebasestorage.app",
+    messagingSenderId: "338236760018",
+    appId: "1:338236760018:web:f1897880afe6b40aa0720b",
+    measurementId: "G-KLKDQST7FQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // Login logic
+  const loginForm = document.getElementById("login-form");
+  const errorMessage = document.getElementById("error-message");
+
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      console.log("Logged in:", userCredential.user);
+      errorMessage.style.display = "none";
+      alert("Login successful!");
+      // Redirect to dashboard/home page
+      window.location.href = "/home/";
+    } catch (error) {
+      console.error("Error logging in:", error);
+      
+      // Don't display the raw Firebase error message
+      errorMessage.style.display = "block";
+      
+      // Display a custom, user-friendly message
+      switch (error.code) {
+        case 'auth/invalid-email':
+          errorMessage.textContent = "Please enter a valid email address.";
+          break;
+        case 'auth/user-not-found':
+          errorMessage.textContent = "No account found with that email address.";
+          break;
+        case 'auth/wrong-password':
+          errorMessage.textContent = "Incorrect password. Please try again.";
+          break;
+        case 'auth/invalid-credential':
+          errorMessage.textContent = "Invalid credentials. Please check your email and password.";
+          break;
+        default:
+          errorMessage.textContent = "An unexpected error occurred. Please try again later.";
+      }
+    }
+  });
+</script>
+</body>
+</html>

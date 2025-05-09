@@ -1,0 +1,2450 @@
+[
+    {
+        "name": "Common Cold",
+        "description": "Description for Common Cold.",
+        "causes": "Causes of Common Cold.",
+        "prevention": "Prevention for Common Cold.",
+        "treatment": "Treatment for Common Cold.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Rash",
+            "Sore Throat",
+            "Swelling"
+        ],
+        "medicines": [
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Flu",
+        "description": "Description for Flu.",
+        "causes": "Causes of Flu.",
+        "prevention": "Prevention for Flu.",
+        "treatment": "Treatment for Flu.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Nausea",
+            "Weight Loss",
+            "Headache"
+        ],
+        "medicines": [
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Asthma",
+        "description": "Description for Asthma.",
+        "causes": "Causes of Asthma.",
+        "prevention": "Prevention for Asthma.",
+        "treatment": "Treatment for Asthma.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Nausea",
+            "Weight Loss",
+            "Fever"
+        ],
+        "medicines": [
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Diabetes",
+        "description": "Description for Diabetes.",
+        "causes": "Causes of Diabetes.",
+        "prevention": "Prevention for Diabetes.",
+        "treatment": "Treatment for Diabetes.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Sore Throat",
+            "Numbness",
+            "Tingling"
+        ],
+        "medicines": [
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Hypertension",
+        "description": "Description for Hypertension.",
+        "causes": "Causes of Hypertension.",
+        "prevention": "Prevention for Hypertension.",
+        "treatment": "Treatment for Hypertension.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Numbness",
+            "Cough",
+            "Fatigue"
+        ],
+        "medicines": [
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Pneumonia",
+        "description": "Description for Pneumonia.",
+        "causes": "Causes of Pneumonia.",
+        "prevention": "Prevention for Pneumonia.",
+        "treatment": "Treatment for Pneumonia.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Vomiting",
+            "Fever",
+            "Nausea"
+        ],
+        "medicines": [
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Tuberculosis",
+        "description": "Description for Tuberculosis.",
+        "causes": "Causes of Tuberculosis.",
+        "prevention": "Prevention for Tuberculosis.",
+        "treatment": "Treatment for Tuberculosis.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Sweating",
+            "Headache",
+            "Sore Throat"
+        ],
+        "medicines": [
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Malaria",
+        "description": "Description for Malaria.",
+        "causes": "Causes of Malaria.",
+        "prevention": "Prevention for Malaria.",
+        "treatment": "Treatment for Malaria.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Abdominal Pain",
+            "Sore Throat",
+            "Sweating"
+        ],
+        "medicines": [
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Cancer",
+        "description": "Description for Cancer.",
+        "causes": "Causes of Cancer.",
+        "prevention": "Prevention for Cancer.",
+        "treatment": "Treatment for Cancer.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Joint Pain",
+            "Insomnia",
+            "Diarrhea"
+        ],
+        "medicines": [
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Arthritis",
+        "description": "Description for Arthritis.",
+        "causes": "Causes of Arthritis.",
+        "prevention": "Prevention for Arthritis.",
+        "treatment": "Treatment for Arthritis.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Shortness of Breath",
+            "Insomnia",
+            "Nausea"
+        ],
+        "medicines": [
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Influenza",
+        "description": "Description for Influenza.",
+        "causes": "Causes of Influenza.",
+        "prevention": "Prevention for Influenza.",
+        "treatment": "Treatment for Influenza.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Headache",
+            "Nausea",
+            "Vomiting"
+        ],
+        "medicines": [
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Allergies",
+        "description": "Description for Allergies.",
+        "causes": "Causes of Allergies.",
+        "prevention": "Prevention for Allergies.",
+        "treatment": "Treatment for Allergies.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Fatigue",
+            "Muscle Weakness",
+            "Paleness"
+        ],
+        "medicines": [
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Cholera",
+        "description": "Description for Cholera.",
+        "causes": "Causes of Cholera.",
+        "prevention": "Prevention for Cholera.",
+        "treatment": "Treatment for Cholera.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Weight Loss",
+            "Diarrhea",
+            "Sore Throat"
+        ],
+        "medicines": [
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Leukemia",
+        "description": "Description for Leukemia.",
+        "causes": "Causes of Leukemia.",
+        "prevention": "Prevention for Leukemia.",
+        "treatment": "Treatment for Leukemia.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Rash",
+            "Weight Loss",
+            "Insomnia"
+        ],
+        "medicines": [
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Eczema",
+        "description": "Description for Eczema.",
+        "causes": "Causes of Eczema.",
+        "prevention": "Prevention for Eczema.",
+        "treatment": "Treatment for Eczema.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Shortness of Breath",
+            "Sore Throat",
+            "Rash"
+        ],
+        "medicines": [
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Gastritis",
+        "description": "Description for Gastritis.",
+        "causes": "Causes of Gastritis.",
+        "prevention": "Prevention for Gastritis.",
+        "treatment": "Treatment for Gastritis.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Joint Pain",
+            "Confusion",
+            "Tingling"
+        ],
+        "medicines": [
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Parkinson's Disease",
+        "description": "Description for Parkinson's Disease.",
+        "causes": "Causes of Parkinson's Disease.",
+        "prevention": "Prevention for Parkinson's Disease.",
+        "treatment": "Treatment for Parkinson's Disease.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Shortness of Breath",
+            "Nausea",
+            "Chest Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Alzheimer's",
+        "description": "Description for Alzheimer's.",
+        "causes": "Causes of Alzheimer's.",
+        "prevention": "Prevention for Alzheimer's.",
+        "treatment": "Treatment for Alzheimer's.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Numbness",
+            "Muscle Weakness",
+            "Diarrhea"
+        ],
+        "medicines": [
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Epilepsy",
+        "description": "Description for Epilepsy.",
+        "causes": "Causes of Epilepsy.",
+        "prevention": "Prevention for Epilepsy.",
+        "treatment": "Treatment for Epilepsy.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Paleness",
+            "Cough",
+            "Swelling"
+        ],
+        "medicines": [
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "HIV/AIDS",
+        "description": "Description for HIV/AIDS.",
+        "causes": "Causes of HIV/AIDS.",
+        "prevention": "Prevention for HIV/AIDS.",
+        "treatment": "Treatment for HIV/AIDS.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Vomiting",
+            "Insomnia",
+            "Rash"
+        ],
+        "medicines": [
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Cystic Fibrosis",
+        "description": "Description for Cystic Fibrosis.",
+        "causes": "Causes of Cystic Fibrosis.",
+        "prevention": "Prevention for Cystic Fibrosis.",
+        "treatment": "Treatment for Cystic Fibrosis.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Abdominal Pain",
+            "Sore Throat",
+            "Vomiting"
+        ],
+        "medicines": [
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Hepatitis",
+        "description": "Description for Hepatitis.",
+        "causes": "Causes of Hepatitis.",
+        "prevention": "Prevention for Hepatitis.",
+        "treatment": "Treatment for Hepatitis.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Numbness",
+            "Fatigue",
+            "Vomiting"
+        ],
+        "medicines": [
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Stroke",
+        "description": "Description for Stroke.",
+        "causes": "Causes of Stroke.",
+        "prevention": "Prevention for Stroke.",
+        "treatment": "Treatment for Stroke.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Swelling",
+            "Abdominal Pain",
+            "Rash"
+        ],
+        "medicines": [
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Migraine",
+        "description": "Description for Migraine.",
+        "causes": "Causes of Migraine.",
+        "prevention": "Prevention for Migraine.",
+        "treatment": "Treatment for Migraine.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Abdominal Pain",
+            "Sweating",
+            "Sore Throat"
+        ],
+        "medicines": [
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Diarrhea",
+        "description": "Description for Diarrhea.",
+        "causes": "Causes of Diarrhea.",
+        "prevention": "Prevention for Diarrhea.",
+        "treatment": "Treatment for Diarrhea.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Sore Throat",
+            "Chest Pain",
+            "Shortness of Breath"
+        ],
+        "medicines": [
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Dengue",
+        "description": "Description for Dengue.",
+        "causes": "Causes of Dengue.",
+        "prevention": "Prevention for Dengue.",
+        "treatment": "Treatment for Dengue.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Numbness",
+            "Confusion",
+            "Swelling"
+        ],
+        "medicines": [
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Chikungunya",
+        "description": "Description for Chikungunya.",
+        "causes": "Causes of Chikungunya.",
+        "prevention": "Prevention for Chikungunya.",
+        "treatment": "Treatment for Chikungunya.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Numbness",
+            "Diarrhea",
+            "Dizziness"
+        ],
+        "medicines": [
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Mumps",
+        "description": "Description for Mumps.",
+        "causes": "Causes of Mumps.",
+        "prevention": "Prevention for Mumps.",
+        "treatment": "Treatment for Mumps.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Swelling",
+            "Sweating",
+            "Paleness"
+        ],
+        "medicines": [
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Measles",
+        "description": "Description for Measles.",
+        "causes": "Causes of Measles.",
+        "prevention": "Prevention for Measles.",
+        "treatment": "Treatment for Measles.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Swelling",
+            "Fever",
+            "Joint Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Sickle Cell Disease",
+        "description": "Description for Sickle Cell Disease.",
+        "causes": "Causes of Sickle Cell Disease.",
+        "prevention": "Prevention for Sickle Cell Disease.",
+        "treatment": "Treatment for Sickle Cell Disease.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Fatigue",
+            "Sore Throat",
+            "Fever"
+        ],
+        "medicines": [
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Cervical Cancer",
+        "description": "Description for Cervical Cancer.",
+        "causes": "Causes of Cervical Cancer.",
+        "prevention": "Prevention for Cervical Cancer.",
+        "treatment": "Treatment for Cervical Cancer.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Confusion",
+            "Shortness of Breath",
+            "Sweating"
+        ],
+        "medicines": [
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Lung Cancer",
+        "description": "Description for Lung Cancer.",
+        "causes": "Causes of Lung Cancer.",
+        "prevention": "Prevention for Lung Cancer.",
+        "treatment": "Treatment for Lung Cancer.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Fatigue",
+            "Nausea",
+            "Numbness"
+        ],
+        "medicines": [
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Kidney Disease",
+        "description": "Description for Kidney Disease.",
+        "causes": "Causes of Kidney Disease.",
+        "prevention": "Prevention for Kidney Disease.",
+        "treatment": "Treatment for Kidney Disease.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Numbness",
+            "Joint Pain",
+            "Headache"
+        ],
+        "medicines": [
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Liver Cirrhosis",
+        "description": "Description for Liver Cirrhosis.",
+        "causes": "Causes of Liver Cirrhosis.",
+        "prevention": "Prevention for Liver Cirrhosis.",
+        "treatment": "Treatment for Liver Cirrhosis.",
+        "severity_level": "Mild",
+        "is_chronic": false,
+        "symptoms": [
+            "Vomiting",
+            "Chest Pain",
+            "Confusion"
+        ],
+        "medicines": [
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Fibromyalgia",
+        "description": "Description for Fibromyalgia.",
+        "causes": "Causes of Fibromyalgia.",
+        "prevention": "Prevention for Fibromyalgia.",
+        "treatment": "Treatment for Fibromyalgia.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Confusion",
+            "Swelling",
+            "Abdominal Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Psoriasis",
+        "description": "Description for Psoriasis.",
+        "causes": "Causes of Psoriasis.",
+        "prevention": "Prevention for Psoriasis.",
+        "treatment": "Treatment for Psoriasis.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Cough",
+            "Abdominal Pain",
+            "Nausea"
+        ],
+        "medicines": [
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Multiple Sclerosis",
+        "description": "Description for Multiple Sclerosis.",
+        "causes": "Causes of Multiple Sclerosis.",
+        "prevention": "Prevention for Multiple Sclerosis.",
+        "treatment": "Treatment for Multiple Sclerosis.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Tingling",
+            "Vomiting",
+            "Fever"
+        ],
+        "medicines": [
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Diphenhydramine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Diphenhydramine.",
+                "allergies_warning": "Avoid Diphenhydramine in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Osteoarthritis",
+        "description": "Description for Osteoarthritis.",
+        "causes": "Causes of Osteoarthritis.",
+        "prevention": "Prevention for Osteoarthritis.",
+        "treatment": "Treatment for Osteoarthritis.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Vomiting",
+            "Diarrhea",
+            "Confusion"
+        ],
+        "medicines": [
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Gout",
+        "description": "Description for Gout.",
+        "causes": "Causes of Gout.",
+        "prevention": "Prevention for Gout.",
+        "treatment": "Treatment for Gout.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Rash",
+            "Insomnia",
+            "Paleness"
+        ],
+        "medicines": [
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Atenolol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Atenolol.",
+                "allergies_warning": "Avoid Atenolol in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Chronic Fatigue Syndrome",
+        "description": "Description for Chronic Fatigue Syndrome.",
+        "causes": "Causes of Chronic Fatigue Syndrome.",
+        "prevention": "Prevention for Chronic Fatigue Syndrome.",
+        "treatment": "Treatment for Chronic Fatigue Syndrome.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Shortness of Breath",
+            "Paleness",
+            "Swelling"
+        ],
+        "medicines": [
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Aspirin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Aspirin.",
+                "allergies_warning": "Avoid Aspirin in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Heart Attack",
+        "description": "Description for Heart Attack.",
+        "causes": "Causes of Heart Attack.",
+        "prevention": "Prevention for Heart Attack.",
+        "treatment": "Treatment for Heart Attack.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Fatigue",
+            "Numbness",
+            "Sweating"
+        ],
+        "medicines": [
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Bronchitis",
+        "description": "Description for Bronchitis.",
+        "causes": "Causes of Bronchitis.",
+        "prevention": "Prevention for Bronchitis.",
+        "treatment": "Treatment for Bronchitis.",
+        "severity_level": "Mild",
+        "is_chronic": true,
+        "symptoms": [
+            "Cough",
+            "Sweating",
+            "Fever"
+        ],
+        "medicines": [
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Bipolar Disorder",
+        "description": "Description for Bipolar Disorder.",
+        "causes": "Causes of Bipolar Disorder.",
+        "prevention": "Prevention for Bipolar Disorder.",
+        "treatment": "Treatment for Bipolar Disorder.",
+        "severity_level": "Severe",
+        "is_chronic": true,
+        "symptoms": [
+            "Fatigue",
+            "Fever",
+            "Abdominal Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Ibuprofen",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ibuprofen.",
+                "allergies_warning": "Avoid Ibuprofen in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Schizophrenia",
+        "description": "Description for Schizophrenia.",
+        "causes": "Causes of Schizophrenia.",
+        "prevention": "Prevention for Schizophrenia.",
+        "treatment": "Treatment for Schizophrenia.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Muscle Weakness",
+            "Diarrhea",
+            "Sore Throat"
+        ],
+        "medicines": [
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Omeprazole.",
+                "allergies_warning": "Avoid Omeprazole in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Amoxicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Amoxicillin.",
+                "allergies_warning": "Avoid Amoxicillin in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Depression",
+        "description": "Description for Depression.",
+        "causes": "Causes of Depression.",
+        "prevention": "Prevention for Depression.",
+        "treatment": "Treatment for Depression.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Dizziness",
+            "Diarrhea",
+            "Abdominal Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Ciprofloxacin.",
+                "allergies_warning": "Avoid Ciprofloxacin in case of certain conditions."
+            },
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            },
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Anxiety",
+        "description": "Description for Anxiety.",
+        "causes": "Causes of Anxiety.",
+        "prevention": "Prevention for Anxiety.",
+        "treatment": "Treatment for Anxiety.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Sweating",
+            "Dizziness",
+            "Joint Pain"
+        ],
+        "medicines": [
+            {
+                "name": "Penicillin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Penicillin.",
+                "allergies_warning": "Avoid Penicillin in case of certain conditions."
+            },
+            {
+                "name": "Loratadine",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Loratadine.",
+                "allergies_warning": "Avoid Loratadine in case of certain conditions."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Vitamin C.",
+                "allergies_warning": "Avoid Vitamin C in case of certain conditions."
+            },
+            {
+                "name": "Lisinopril",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Lisinopril.",
+                "allergies_warning": "Avoid Lisinopril in case of certain conditions."
+            },
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Gastric Ulcer",
+        "description": "Description for Gastric Ulcer.",
+        "causes": "Causes of Gastric Ulcer.",
+        "prevention": "Prevention for Gastric Ulcer.",
+        "treatment": "Treatment for Gastric Ulcer.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Tingling",
+            "Swelling",
+            "Rash"
+        ],
+        "medicines": [
+            {
+                "name": "Prednisone",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Prednisone.",
+                "allergies_warning": "Avoid Prednisone in case of certain conditions."
+            },
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Paracetamol.",
+                "allergies_warning": "Avoid Paracetamol in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Clindamycin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Clindamycin.",
+                "allergies_warning": "Avoid Clindamycin in case of certain conditions."
+            },
+            {
+                "name": "Simvastatin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Simvastatin.",
+                "allergies_warning": "Avoid Simvastatin in case of certain conditions."
+            }
+        ]
+    },
+    {
+        "name": "Endometriosis",
+        "description": "Description for Endometriosis.",
+        "causes": "Causes of Endometriosis.",
+        "prevention": "Prevention for Endometriosis.",
+        "treatment": "Treatment for Endometriosis.",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Headache",
+            "Abdominal Pain",
+            "Shortness of Breath"
+        ],
+        "medicines": [
+            {
+                "name": "Metformin",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Metformin.",
+                "allergies_warning": "Avoid Metformin in case of certain conditions."
+            },
+            {
+                "name": "Corticosteroids",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Corticosteroids.",
+                "allergies_warning": "Avoid Corticosteroids in case of certain conditions."
+            },
+            {
+                "name": "Albuterol",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Albuterol.",
+                "allergies_warning": "Avoid Albuterol in case of certain conditions."
+            },
+            {
+                "name": "Cough Syrup",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Cough Syrup.",
+                "allergies_warning": "Avoid Cough Syrup in case of certain conditions."
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "form": "Tablet",
+                "dosage": "500mg",
+                "side_effects": "Side effects of Hydrochlorothiazide.",
+                "allergies_warning": "Avoid Hydrochlorothiazide in case of certain conditions."
+            }
+        ]
+    }
+]

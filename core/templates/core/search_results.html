@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #3f51b5;
+      --secondary: #4caf50;
+      --accent: #ff9800;
+      --light-bg: #f5f7fa;
+      --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    body {
+      background-color: var(--light-bg);
+      font-family: 'Inter', sans-serif;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary), #5c6bc0);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -30px;
+      width: 150px;
+      height: 150px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+
+    .search-query {
+      background: rgba(255,255,255,0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .section-title {
+      position: relative;
+      margin: 3rem 0 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0.5rem auto 0;
+    }
+
+    /* Wider disease cards */
+    .disease-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .disease-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .disease-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .disease-img-container {
+      flex: 0 0 300px;
+    }
+
+    .disease-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .disease-content {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      color: #4a5568;
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .badge-container {
+      margin: 0.75rem 0;
+    }
+
+    .badge {
+      background: #e2e8f0;
+      color: #4a5568;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .badge-primary {
+      background: #ebf4ff;
+      color: var(--primary);
+    }
+
+    .badge-warning {
+      background: #fffaf0;
+      color: #c05621;
+    }
+
+    /* Medicine cards remain the same */
+    .medicine-card {
+      border-left: 4px solid var(--secondary);
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 1.5rem;
+      height: 100%;
+    }
+
+    .medicine-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .medicine-name {
+      font-weight: 600;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-badge {
+      background: #fff5f5;
+      color: #e53e3e;
+      padding: 0.5rem;
+      border-radius: 6px;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+      margin: 2rem 0;
+    }
+
+    .no-results-icon {
+      font-size: 3rem;
+      color: #a0aec0;
+      margin-bottom: 1rem;
+    }
+
+    .no-results h4 {
+      color: #4a5568;
+      font-weight: 600;
+    }
+
+    .no-results p {
+      color: #718096;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 2rem 1rem;
+      }
+      
+      .header h2 {
+        font-size: 1.8rem;
+      }
+
+      .disease-card {
+        flex-direction: column;
+      }
+
+      .disease-img-container {
+        flex: 0 0 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h2 class="mb-3">Search Results</h2>
+      {% if query %}
+        <div class="search-query">
+          <i class="fas fa-search me-2"></i> <strong>{{ query }}</strong>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+
+    {% if diseases %}
+      <h3 class="section-title">Diseases Found</h3>
+      <div class="disease-card-container">
+        {% for disease in diseases %}
+          <div class="disease-card">
+            <div class="disease-img-container">
+             {% if disease.image_url %}
+  <img src="{{ disease.image_url }}" alt="{{ disease.name }}" class="disease-img" onerror="this.src='{% static 'default_disease.jpg' %}'">
+{% else %}
+  <img src="{% static 'default_disease.jpg' %}" class="disease-img" alt="Default disease image">
+{% endif %}
+
+            </div>
+            <div class="disease-content">
+              <h5 class="card-title">{{ disease.name }}</h5>
+              
+              <div class="badge-container">
+                <span class="badge badge-primary">
+                  <i class="fas fa-user-circle me-1"></i> {{ disease.age_group }}
+                </span>
+                <span class="badge">
+                  <i class="fas fa-bolt me-1"></i> {{ disease.severity_level }}
+                </span>
+                {% if disease.is_chronic %}
+                  <span class="badge badge-warning">
+                    <i class="fas fa-clock me-1"></i> Chronic
+                  </span>
+                {% endif %}
+              </div>
+
+              <p class="card-text"><strong>Causes:</strong> {{ disease.causes }}</p>
+              <p class="card-text"><strong>Prevention:</strong> {{ disease.prevention }}</p>
+              <p class="card-text"><strong>Treatment:</strong> {{ disease.treatment }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if medicines %}
+      <h3 class="section-title">Medicines Found</h3>
+      <div class="row">
+        {% for med in medicines %}
+          <div class="col-md-6 col-lg-4">
+            <div class="card medicine-card">
+              <div class="card-body">
+                <h5 class="medicine-name">{{ med.name }}</h5>
+                
+                <div class="badge-container">
+                  <span class="badge">
+                    <i class="fas fa-capsules me-1"></i> {{ med.form }}
+                  </span>
+                  <span class="badge">
+                    <i class="fas fa-user me-1"></i> {{ med.age_group }}
+                  </span>
+                </div>
+
+                <p class="card-text"><strong>For:</strong> {{ med.for_disease.name }}</p>
+                <p class="card-text"><strong>Dosage:</strong> {{ med.dosage }}</p>
+
+                {% if med.side_effects %}
+                  <p class="card-text"><strong>Side Effects:</strong> {{ med.side_effects }}</p>
+                {% endif %}
+
+                {% if med.allergies_warning %}
+                  <div class="warning-badge">
+                    <i class="fas fa-exclamation-triangle me-2"></i> {{ med.allergies_warning }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if not diseases and not medicines %}
+      <div class="no-results">
+        <div class="no-results-icon">
+          <i class="far fa-frown"></i>
+        </div>
+        <h4 class="mb-3">No results found for "{{ query }}"</h4>
+        <p>Try different keywords or check your spelling. You can search for symptoms, medicine names, or disease names.</p>
+      </div>
+    {% endif %}
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

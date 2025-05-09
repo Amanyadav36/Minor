@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Profile | MediCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2A9D8F;
+            --secondary: #264653;
+            --accent: #E76F51;
+            --light: #F4F7FA;
+            --card-bg: linear-gradient(145deg, #ffffff, #f0f4f8);
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            --text-dark: #1A2A44;
+            --text-muted: #6B7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            min-height: 100vh;
+            padding: 2rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 1.5rem;
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-container:hover {
+            transform: translateY(-4px);
+        }
+
+        .back-button {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        .back-button a,
+        .logout-button {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button a:hover,
+        .logout-button:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(4px);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .profile-picture-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-picture-container:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-picture {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-overlay {
+            position: absolute;
+            bottom: -8px;
+            right: -8px;
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .upload-overlay:hover {
+            transform: scale(1.2);
+            background: var(--secondary);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-title h1 {
+            color: var(--secondary);
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .profile-title p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .profile-form {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .form-section {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .form-section:hover {
+            transform: translateY(-2px);
+        }
+
+        .form-section h3 {
+            color: var(--secondary);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 2px solid #e9ecef;
+            border-radius: 0.75rem;
+            background: #ffffff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 8px rgba(42, 157, 143, 0.2);
+            outline: none;
+        }
+
+        .form-group input[readonly],
+        .form-group select[disabled],
+        .form-group textarea[readonly] {
+            background: #f8f9fa;
+            border-color: #e9ecef;
+            cursor: not-allowed;
+            opacity: 0.8;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .btn:hover::after {
+            left: 100%;
+        }
+
+        .btn-edit {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-save {
+            background: #2a9d8f;
+            color: white;
+        }
+
+        .btn-cancel {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        #saveBtn,
+        #cancelBtn {
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .profile-container {
+                padding: 1.5rem;
+            }
+
+            .profile-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+
+            .profile-picture-container {
+                width: 120px;
+                height: 120px;
+            }
+
+            .form-section {
+                padding: 1.5rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .profile-title p {
+                font-size: 1rem;
+            }
+
+            .form-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Loading State */
+        .btn.loading {
+            opacity: 0.7;
+            cursor: not-allowed;
+            position: relative;
+        }
+
+        .btn.loading::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 2px solid white;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            left: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Accessibility */
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus,
+        .btn:focus {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="back-button">
+            <a href="/home/" aria-label="Back to Dashboard"><i class="fas fa-chevron-left"></i> Back to Dashboard</a>
+            <span class="logout-button" id="logoutBtn" aria-label="Logout"><i class="fas fa-sign-out-alt"></i> Logout</span>
+        </div>
+
+        <div class="profile-header">
+            <div class="profile-picture-container">
+                <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-picture" id="profileImage">
+                <div class="upload-overlay" id="uploadTrigger" aria-label="Upload Profile Picture">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" hidden aria-label="Profile Picture Upload">
+            <div class="profile-info">
+                <div class="profile-title">
+                    <h1 id="profileName">Loading...</h1>
+                    <p id="profileEmail">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="profile-form" id="profileForm" aria-label="User Profile Form">
+            <div class="form-section">
+                <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" disabled aria-disabled="true">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Location Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="text" id="zipCode" readonly aria-readonly="true">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-heartbeat"></i> Medical Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group</label>
+                        <select id="bloodGroup" disabled aria-disabled="true">
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="medicalEmail">Medical Email</label>
+                        <input type="email" id="medicalEmail" readonly aria-readonly="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="chronicDiseases">Chronic Conditions</label>
+                        <textarea id="chronicDiseases" rows="3" readonly aria-readonly="true"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-edit" id="editBtn" aria-label="Edit Profile">
+                    <i class="fas fa-edit"></i> Edit Profile
+                </button>
+                <button type="button" class="btn btn-save" id="saveBtn" aria-label="Save Changes">
+                    <i class="fas fa-save"></i> Save Changes
+                </button>
+                <button type="button" class="btn btn-cancel" id="cancelBtn" aria-label="Cancel">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script>
+        // Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBsRy6ZnDV9uDbPDoHKd2XVtgaRxCGcqbQ",
+            authDomain: "medhealth-3c9ce.firebaseapp.com",
+            projectId: "medhealth-3c9ce",
+            storageBucket: "medhealth-3c9ce.appspot.com",
+            messagingSenderId: "338236760018",
+            appId: "1:338236760018:web:f1897880afe6b40aa0720b",
+            measurementId: "G-KLKDQST7FQ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        console.log('Firebase initialized.');
+
+        // Auth State Listener
+        auth.onAuthStateChanged(async user => {
+            console.log('Auth state changed. User:', user);
+            if (user) {
+                await loadUserData(user);
+                setupEventListeners(user);
+            } else {
+                console.log('No user authenticated. Redirecting to login.');
+                window.location.href = '/login/';
+            }
+        });
+
+        // Load User Data
+        async function loadUserData(user) {
+            try {
+                console.log('Loading user data for UID:', user.uid);
+                const doc = await db.collection('users').doc(user.uid).get();
+                if (doc.exists) {
+                    const data = doc.data();
+                    console.log('User data loaded:', data);
+
+                    // Personal Information
+                    document.getElementById('firstName').value = data.firstName || '';
+                    document.getElementById('lastName').value = data.lastName || '';
+                    document.getElementById('age').value = data.age || '';
+                    document.getElementById('gender').value = data.gender || 'male';
+
+                    // Location Information
+                    document.getElementById('city').value = data.city || '';
+                    document.getElementById('state').value = data.state || '';
+                    document.getElementById('zipCode').value = data.zipCode || '';
+
+                    // Medical Information
+                    document.getElementById('bloodGroup').value = data.bloodGroup || 'A+';
+                    document.getElementById('medicalEmail').value = data.medicalEmail || '';
+                    document.getElementById('chronicDiseases').value = data.chronicDiseases || '';
+
+                    // Profile Header
+                    document.getElementById('profileName').textContent = `${data.firstName || 'User'} ${data.lastName || ''}`.trim() || 'User';
+                    document.getElementById('profileEmail').textContent = data.email || user.email || 'No email';
+
+                    // Profile Image
+                    const profileImage = data.profileImage || 'https://via.placeholder.com/120';
+                    console.log('Setting profile image to:', profileImage);
+                    const profileImageElement = document.getElementById('profileImage');
+                    profileImageElement.src = profileImage;
+                    profileImageElement.onerror = () => {
+                        console.log('Failed to load profile image. Using fallback.');
+                        profileImageElement.src = 'https://via.placeholder.com/120';
+                    };
+                } else {
+                    console.log('No user document found for UID:', user.uid);
+                    alert('User data not found. Please complete your profile.');
+                }
+            } catch (error) {
+                console.error('Error loading user data:', error.code, error.message);
+                alert('Error loading profile data: ' + error.message);
+            }
+        }
+
+        // Event Listeners Setup
+        function setupEventListeners(user) {
+            console.log('Setting up event listeners for user:', user.uid);
+            const editBtn = document.getElementById('editBtn');
+            const saveBtn = document.getElementById('saveBtn');
+            const cancelBtn = document.getElementById('cancelBtn');
+            const logoutBtn = document.getElementById('logoutBtn');
+            const inputs = document.querySelectorAll('input, select, textarea');
+
+            editBtn.addEventListener('click', () => {
+                console.log('Edit button clicked');
+                inputs.forEach(input => {
+                    input.readOnly = false;
+                    if (input.tagName === 'SELECT') input.disabled = false;
+                });
+                editBtn.style.display = 'none';
+                saveBtn.style.display = 'inline-flex';
+                cancelBtn.style.display = 'inline-flex';
+            });
+
+            cancelBtn.addEventListener('click', () => {
+                console.log('Cancel button clicked');
+                inputs.forEach(input => {
+                    input.readOnly = true;
+                    if (input.tagName === 'SELECT') input.disabled = true;
+                });
+                editBtn.style.display = 'inline-flex';
+                saveBtn.style.display = 'none';
+                cancelBtn.style.display = 'none';
+                loadUserData(user);
+            });
+
+            saveBtn.addEventListener('click', async () => {
+                console.log('Save button clicked');
+                saveBtn.classList.add('loading');
+                try {
+                    const updatedData = {
+                        firstName: document.getElementById('firstName').value,
+                        lastName: document.getElementById('lastName').value,
+                        age: document.getElementById('age').value,
+                        gender: document.getElementById('gender').value,
+                        city: document.getElementById('city').value,
+                        state: document.getElementById('state').value,
+                        zipCode: document.getElementById('zipCode').value,
+                        bloodGroup: document.getElementById('bloodGroup').value,
+                        medicalEmail: document.getElementById('medicalEmail').value,
+                        chronicDiseases: document.getElementById('chronicDiseases').value,
+                        email: user.email,
+                        lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
+                    };
+                    await db.collection('users').doc(user.uid).set(updatedData, { merge: true });
+                    console.log('Profile data updated successfully');
+                    cancelBtn.click();
+                    alert('Profile updated successfully!');
+                } catch (error) {
+                    console.error('Error saving profile data:', error.code, error.message);
+                    alert('Error saving profile data: ' + error.message);
+                } finally {
+                    saveBtn.classList.remove('loading');
+                }
+            });
+
+            logoutBtn.addEventListener('click', async () => {
+                console.log('Logout button clicked');
+                logoutBtn.classList.add('loading');
+                try {
+                    await auth.signOut();
+                    console.log('User signed out successfully');
+                    window.location.href = '/login/';
+                } catch (error) {
+                    console.error('Error signing out:', error.code, error.message);
+                    alert('Error signing out: ' + error.message);
+                } finally {
+                    logoutBtn.classList.remove('loading');
+                }
+            });
+
+            document.getElementById('uploadTrigger').addEventListener('click', () => {
+                console.log('Upload trigger clicked');
+                const fileInput = document.getElementById('fileInput');
+                if (fileInput) {
+                    fileInput.click();
+                } else {
+                    console.error('File input element not found');
+                }
+            });
+
+            document.getElementById('fileInput').addEventListener('change', async (e) => {
+                console.log('File input changed. Selected file:', e.target.files[0]);
+                const file = e.target.files[0];
+                if (file) {
+                    const validTypes = ['image/jpeg', 'image/png', 'image/gif'];
+                    const maxSize = 2 * 1024 * 1024; // 2MB (Firestore document size limit consideration)
+                    if (!validTypes.includes(file.type)) {
+                        console.log('Invalid file type:', file.type);
+                        alert('Please upload a valid image (JPEG, PNG, or GIF)');
+                        return;
+                    }
+                    if (file.size > maxSize) {
+                        console.log('File too large:', file.size);
+                        alert('Image size must be less than 2MB');
+                        return;
+                    }
+
+                    try {
+                        // Convert image to base64
+                        const reader = new FileReader();
+                        reader.onload = async () => {
+                            const base64Image = reader.result;
+                            console.log('Image converted to base64, size:', base64Image.length);
+                            try {
+                                await db.collection('users').doc(user.uid).update({
+                                    profileImage: base64Image
+                                });
+                                console.log('Firestore updated with base64 image');
+                                document.getElementById('profileImage').src = base64Image;
+                                console.log('Profile image updated in UI');
+                                alert('Profile picture updated successfully!');
+                            } catch (error) {
+                                console.error('Error updating profile picture in Firestore:', error.code, error.message);
+                                alert('Error updating profile picture: ' + error.message);
+                            }
+                        };
+                        reader.onerror = () => {
+                            console.error('Error reading file');
+                            alert('Error reading image file');
+                        };
+                        reader.readAsDataURL(file);
+                    } catch (error) {
+                        console.error('Error processing image:', error.code, error.message);
+                        alert('Error processing image: ' + error.message);
+                    }
+                } else {
+                    console.log('No file selected');
+                    alert('Please select a file to upload.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ disease.name }} - MedHealth</title>
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .disease-detail {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .disease-detail h1 {
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        .disease-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .disease-info {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .disease-info h3 {
+            color: #2563eb;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .disease-info p, .disease-info ul {
+            color: #64748b;
+            line-height: 1.6;
+        }
+        .disease-info ul {
+            padding-left: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .disease-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MedHealth</span>
+            </div>
+            <nav class="main-nav">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'profile' %}">Profile</a>
+                <a href="#">About</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disease Detail Section -->
+    <section class="disease-detail">
+        <h1>{{ disease.name }}</h1>
+        <div class="disease-image" style="background-image: url('{% if disease.image %}{{ disease.image.url }}{% elif disease.image_url %}{{ disease.image_url }}{% else %}https://via.placeholder.com/600x300{% endif %}');"></div>
+        <div class="disease-info">
+            <h3>Description</h3>
+            <p>{{ disease.description|linebreaks }}</p>
+
+            <h3>Symptoms</h3>
+            <ul>
+                {% for symptom in disease.symptoms.all %}
+                <li>{{ symptom.name }}: {{ symptom.description|default:"No description available" }}</li>
+                {% empty %}
+                <li>No symptoms listed.</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Causes</h3>
+            <p>{{ disease.causes|linebreaks|default:"No causes listed." }}</p>
+
+            <h3>Prevention</h3>
+            <p>{{ disease.prevention|linebreaks|default:"No prevention information listed." }}</p>
+
+            <h3>Treatment</h3>
+            <p>{{ disease.treatment|linebreaks|default:"No treatment information listed." }}</p>
+
+            <h3>Additional Information</h3>
+            <p><strong>Age Group:</strong> {{ disease.age_group }}</p>
+            <p><strong>Severity Level:</strong> {{ disease.severity_level }}</p>
+            <p><strong>Chronic:</strong> {{ disease.is_chronic|yesno:"Yes,No" }}</p>
+            <p><strong>Last Updated:</strong> {{ disease.last_updated|date:"F d, Y" }}</p>
+        </div>
+        <a href="{% url 'all_conditions' %}" class="back-link"><i class="fas fa-arrow-left"></i> Back to All Conditions</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MedHealth</span>
+                    </div>
+                    <p>Your trusted health companion providing reliable medical information and tools to help you manage your health.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'all_conditions' %}">Conditions</a></li>
+                        <li><a href="#">Medications</a></li>
+                        <li><a href="#">Reminders</a></li>
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Health Articles</a></li>
+                        <li><a href="#">Medication Guide</a></li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@medcare.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="copyright">
+                    © 2023 MedHealth. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'core/js/home.js' %}"></script>
+</body>
+</html>

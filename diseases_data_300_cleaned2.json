@@ -1,0 +1,158 @@
+[
+   {
+        "name": "Viral Hepatitis",
+        "description": "A viral infection causing liver inflammation, often leading to jaundice, fatigue, and abdominal pain.",
+        "causes": "Infection by hepatitis viruses (A, B, C, D, or E), contaminated food/water, or blood contact.",
+        "prevention": "Vaccination (for Hepatitis A and B), safe food/water practices, avoiding needle sharing.",
+        "treatment": "Rest, hydration, antiviral medications for chronic cases (e.g., Hepatitis C).",
+        "severity_level": "Moderate",
+        "is_chronic": true,
+        "symptoms": [
+            "Jaundice",
+            "Fatigue",
+            "Abdominal Pain",
+            "Nausea",
+            "Dark Urine"
+        ],
+        "medicines": [
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg every 6 hours",
+                "side_effects": "Nausea, rash, liver damage (rare)",
+                "allergies_warning": "Avoid if allergic to paracetamol or with liver disease."
+            },
+            {
+                "name": "Omeprazole",
+                "form": "Tablet",
+                "dosage": "20mg daily",
+                "side_effects": "Headache, diarrhea, stomach pain",
+                "allergies_warning": "Avoid if allergic to proton pump inhibitors."
+            },
+            {
+                "name": "Vitamin C",
+                "form": "Tablet",
+                "dosage": "500mg daily",
+                "side_effects": "Diarrhea, stomach cramps",
+                "allergies_warning": "Avoid if allergic to ascorbic acid."
+            }
+        ]
+    },
+    {
+        "name": "Gastroenteritis",
+        "description": "Inflammation of the stomach and intestines, causing diarrhea, vomiting, and abdominal pain.",
+        "causes": "Viral (e.g., norovirus), bacterial (e.g., E. coli), or parasitic infections; contaminated food/water.",
+        "prevention": "Hand hygiene, safe food preparation, clean drinking water.",
+        "treatment": "Rehydration, anti-diarrheal medication, rest.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Diarrhea",
+            "Vomiting",
+            "Abdominal Pain",
+            "Fever",
+            "Nausea"
+        ],
+        "medicines": [
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg every 6 hours",
+                "side_effects": "Nausea, rash, liver damage (rare)",
+                "allergies_warning": "Avoid if allergic to paracetamol or with liver disease."
+            },
+            {
+                "name": "Loperamide",
+                "form": "Tablet",
+                "dosage": "2mg after each loose stool",
+                "side_effects": "Constipation, dizziness, nausea",
+                "allergies_warning": "Avoid if allergic to loperamide or with bacterial enteritis."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg twice daily",
+                "side_effects": "Nausea, diarrhea, tendonitis",
+                "allergies_warning": "Avoid if allergic to quinolones."
+            }
+        ]
+    },
+    {
+        "name": "Typhoid Fever",
+        "description": "A bacterial infection causing fever, diarrhea, and sometimes jaundice due to Salmonella typhi.",
+        "causes": "Ingestion of contaminated food or water with Salmonella typhi.",
+        "prevention": "Typhoid vaccination, safe food/water practices, hand hygiene.",
+        "treatment": "Antibiotics, hydration, fever management.",
+        "severity_level": "Severe",
+        "is_chronic": false,
+        "symptoms": [
+            "Fever",
+            "Diarrhea",
+            "Jaundice",
+            "Abdominal Pain",
+            "Fatigue"
+        ],
+        "medicines": [
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg every 6 hours",
+                "side_effects": "Nausea, rash, liver damage (rare)",
+                "allergies_warning": "Avoid if allergic to paracetamol or with liver disease."
+            },
+            {
+                "name": "Ciprofloxacin",
+                "form": "Tablet",
+                "dosage": "500mg twice daily",
+                "side_effects": "Nausea, diarrhea, tendonitis",
+                "allergies_warning": "Avoid if allergic to quinolones."
+            },
+            {
+                "name": "Ceftriaxone",
+                "form": "Injection",
+                "dosage": "1g daily",
+                "side_effects": "Rash, diarrhea, injection site pain",
+                "allergies_warning": "Avoid if allergic to cephalosporins."
+            }
+        ]
+    },
+    {
+        "name": "Amoebiasis",
+        "description": "A parasitic infection causing diarrhea and potential liver abscesses, often linked to Entamoeba histolytica.",
+        "causes": "Ingestion of contaminated food/water with Entamoeba histolytica cysts.",
+        "prevention": "Safe drinking water, proper sanitation, hand hygiene.",
+        "treatment": "Antiprotozoal medications, hydration, pain relief.",
+        "severity_level": "Moderate",
+        "is_chronic": false,
+        "symptoms": [
+            "Diarrhea",
+            "Abdominal Pain",
+            "Fever",
+            "Nausea",
+            "Weight Loss"
+        ],
+        "medicines": [
+            {
+                "name": "Paracetamol",
+                "form": "Tablet",
+                "dosage": "500mg every 6 hours",
+                "side_effects": "Nausea, rash, liver damage (rare)",
+                "allergies_warning": "Avoid if allergic to paracetamol or with liver disease."
+            },
+            {
+                "name": "Metronidazole",
+                "form": "Tablet",
+                "dosage": "500mg three times daily",
+                "side_effects": "Nausea, metallic taste, dizziness",
+                "allergies_warning": "Avoid if allergic to nitroimidazoles."
+            },
+            {
+                "name": "Tinidazole",
+                "form": "Tablet",
+                "dosage": "2g daily",
+                "side_effects": "Nausea, headache, metallic taste",
+                "allergies_warning": "Avoid if allergic to nitroimidazoles."
+            }
+        ]
+    }
+]

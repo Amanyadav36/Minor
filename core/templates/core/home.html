@@ -1,0 +1,326 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedHealth - Your Health Companion</title>
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-minimal {
+            position: relative;
+            padding: 40px 20px;
+            overflow: visible; /* Ensure hero section doesn't clip children */
+        }
+        .hero-content {
+            max-width: 600px;
+            margin: 0;
+            margin-left: 80px; /* Increased offset from the left */
+            text-align: left; /* Align content to the left */
+            position: relative;
+            z-index: 1;
+        }
+        .search-container {
+            position: relative;
+            z-index: 1000; /* Ensure search container is above other elements */
+        }
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 12px 40px 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .search-bar:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .search-button {
+            background: #2563eb;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .autocomplete-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-height: 250px; /* Increased to accommodate more suggestions */
+            overflow-y: auto;
+            z-index: 1001; /* Ensure dropdown is above other elements */
+            display: none;
+        }
+        .autocomplete-suggestion {
+            padding: 10px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .autocomplete-suggestion:hover {
+            background: #f1f5f9;
+        }
+        .suggestion-name {
+            color: #1e293b;
+            font-weight: 500;
+        }
+        .suggestion-type {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MedHealth</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="active">Home</a>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'profile' %}">Profile</a>
+                <a href="#">About</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-minimal">
+        <div class="hero-content">
+            <div class="brand-name">
+                <div class="logo-mark">⚕️</div>
+                <h1>MedHealth</h1>
+            </div>
+            <h2>Your Smarter Health Companion</h2>
+            <p class="hero-description">Access reliable medical information, track your health, and connect with professionals - all in one place.</p>
+            <div class="search-container">
+                <form method="get" action="{% url 'search_results' %}">
+                    <div class="search-wrapper">
+                        <input type="text" class="search-bar" name="q" placeholder="Search diseases, medicines or symptoms..." autocomplete="off">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="autocomplete-suggestions" id="autocomplete-suggestions"></div>
+                </form>
+            </div>
+        </div>
+        <div class="medical-graphic">
+            <div class="graphic-element pulse"></div>
+            <div class="graphic-element heartbeat"></div>
+        </div>
+    </section>
+
+    <!-- Health Conditions Section -->
+    <section class="health-conditions">
+        <h2>Common Health Conditions</h2>
+        <p class="section-subtitle">Browse information about prevalent medical conditions</p>
+        <div class="conditions-grid">
+            {% for disease in diseases %}
+            <div class="condition-card">
+                <div class="condition-image" style="background-image: url('{% if disease.image %}{{ disease.image.url }}{% elif disease.image_url %}{{ disease.image_url }}{% else %}https://via.placeholder.com/500{% endif %}');"></div>
+                <div class="condition-info">
+                    <h3>{{ disease.name }}</h3>
+                    <p>{{ disease.description|truncatewords:15 }}</p>
+                    <a href="{% url 'disease_detail' disease.id %}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            {% empty %}
+            <p>No diseases found.</p>
+            {% endfor %}
+        </div>
+        <div class="view-all">
+            <a href="{% url 'all_conditions' %}" class="view-all-btn">View All Conditions</a>
+        </div>
+    </section>
+
+    <!-- Medical Cards Section -->
+    <section class="medical-cards">
+        <div class="cards-container">
+            <div class="simple-card">
+                <div class="card-icon">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <h3>Medicine Guide</h3>
+                <p>Detailed drug information including dosages, interactions, and side effects</p>
+                <button class="card-btn">Browse Medications</button>
+            </div>
+            <div class="simple-card">
+                <div class="card-icon">
+                    <i class="fas fa-book-medical"></i>
+                </div>
+                <h3>Disease Library</h3>
+                <p>Comprehensive information on symptoms, causes, and treatments</p>
+                <button class="card-btn">Explore Diseases</button>
+            </div>
+            <div class="simple-card">
+                <div class="card-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Medication Reminders</h3>
+                <p>Never miss a dose with smart alerts and tracking</p>
+                <button class="card-btn">Set Reminders</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Medical Services Section -->
+    <section class="auto-medical-listing">
+        <div class="medical-lists-container">
+            <h2>Nearby Medical Services</h2>
+            <div class="loading-container">
+                <div class="medical-spinner"></div>
+                <p>Finding nearby medical services...</p>
+            </div>
+            <div class="medical-category" id="hospitalsSection">
+                <h3>🏥 Nearby Hospitals</h3>
+                <div class="medical-items" id="hospitalsList"></div>
+            </div>
+            <div class="medical-category" id="pharmaciesSection">
+                <h3>💊 Nearby Pharmacies</h3>
+                <div class="medical-items" id="pharmaciesList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MedHealth</span>
+                    </div>
+                    <p>Your trusted health companion providing reliable medical information and tools to help you manage your health.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Medications</a></li>
+                        <li><a href="#">Reminders</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Health Articles</a></li>
+                        <li><a href="#">Medication Guide</a></li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@medcare.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="copyright">
+                    © 2023 MedHealth. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'core/js/home.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            const $searchBar = $('.search-bar');
+            const $suggestions = $('#autocomplete-suggestions');
+
+            $searchBar.on('input', function() {
+                const query = $(this).val().trim();
+                if (query.length === 0) {
+                    $suggestions.hide().empty();
+                    return;
+                }
+
+                $.ajax({
+                    url: '{% url "autocomplete_search" %}',
+                    data: { q: query },
+                    dataType: 'json',
+                    success: function(data) {
+                        $suggestions.empty();
+                        if (data.suggestions.length > 0) {
+                            data.suggestions.forEach(function(item) {
+                                const $suggestion = $('<div>')
+                                    .addClass('autocomplete-suggestion')
+                                    .html(
+                                        `<span class="suggestion-name">${item.name}</span>` +
+                                        `<span class="suggestion-type">${item.type}</span>`
+                                    );
+                                if (item.url !== '#') {
+                                    $suggestion.on('click', function() {
+                                        window.location.href = item.url;
+                                    });
+                                }
+                                $suggestions.append($suggestion);
+                            });
+                            $suggestions.show();
+                        } else {
+                            $suggestions.hide();
+                        }
+                    },
+                    error: function() {
+                        $suggestions.hide().empty();
+                    }
+                });
+            });
+
+            // Hide suggestions when clicking outside
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.search-container').length) {
+                    $suggestions.hide().empty();
+                }
+            });
+
+            // Show suggestions when clicking the search barava
+            $searchBar.on('focus', function() {
+                if ($(this).val().trim().length > 0) {
+                    $suggestions.show();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
